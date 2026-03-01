@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url'
 const dir = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  base: '/ow/',
+  base: '/ow-pick-recommend/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: { '@': path.resolve(dir, 'src') },
