@@ -1,0 +1,103 @@
+{
+  "title": "オーバーウォッチ ヒーロー構成相性表",
+  "source_image_type": "インフォグラフィック",
+  "legend": {
+    "評価対象": "構成との相性",
+    "symbols": [
+      { "symbol": "◎", "label": "最高", "color": "水色" },
+      { "symbol": "○", "label": "良い", "color": "青" },
+      { "symbol": "△", "label": "非効率", "color": "黄" },
+      { "symbol": "✕", "label": "悪い", "color": "赤" }
+    ]
+  },
+  "composition_types": [
+    {
+      "name": "ダイブ",
+      "description": "多方面から一か所に瞬時に攻撃を仕掛ける"
+    },
+    {
+      "name": "ラッシュ",
+      "description": "集まって瞬時に敵に近づく近接戦を仕掛ける"
+    },
+    {
+      "name": "ポーク",
+      "description": "遠距離攻撃で持続的に敵を攻撃する"
+    },
+    {
+      "name": "アンカー",
+      "description": "守備型で敵の攻撃を受け流しカウンターする"
+    }
+  ],
+  "roles": [
+    {
+      "role": "DPS",
+      "archetypes": [
+        {
+          "name": "スペシャリスト",
+          "passive": "キル時、3秒間リロード速度50%上昇",
+          "hero_rows_in_card": 6
+        },
+        {
+          "name": "フランカー",
+          "passive": "ライフ・パック獲得時体力を75追加回復",
+          "hero_rows_in_card": 6
+        },
+        {
+          "name": "リコン",
+          "passive": "敵の体力が50%未満になると5秒間位置を壁越しに探知",
+          "hero_rows_in_card": 4
+        },
+        {
+          "name": "シャープシューター",
+          "passive": "クリティカル時、ダメージの0.75%分移動スピード加獲",
+          "hero_rows_in_card": 6
+        }
+      ]
+    },
+    {
+      "role": "TANK",
+      "archetypes": [
+        {
+          "name": "イニシエーター",
+          "passive": "空中に0.8秒以上滞在で1秒間、移動7.5回復",
+          "hero_rows_in_card": 3
+        },
+        {
+          "name": "ブルーザー",
+          "passive": "クリティカルダメージ25%軽減、致命傷時に移動速度20%上昇",
+          "hero_rows_in_card": 4
+        },
+        {
+          "name": "ストールワート",
+          "passive": "ノックバック・スロー効果を40%軽減",
+          "hero_rows_in_card": 6
+        }
+      ]
+    },
+    {
+      "role": "SUPPORT",
+      "archetypes": [
+        {
+          "name": "タクティシャン",
+          "passive": "ULTを25%までオーバーチャージ可能、ULT使用後もオーバーチャージ維持",
+          "hero_rows_in_card": 6
+        },
+        {
+          "name": "サバイバー",
+          "passive": "移動スキル使用時、0.25秒後自己回復バッシブ発動",
+          "hero_rows_in_card": 4
+        },
+        {
+          "name": "メディック",
+          "passive": "味方回復時、回復量の25%分自己も回復",
+          "hero_rows_in_card": 4
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "各カード内の行はヒーロー顔アイコンで表示され、テキスト名は画像内に明示されていません。",
+    "各行は [ダイブ, ラッシュ, ポーク, アンカー] の4列で相性評価されています。"
+  ],
+  "extracted_at": "2026-02-26"
+}

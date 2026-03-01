@@ -1,0 +1,127 @@
+{
+  "columns": ["ダイブ", "ラッシュ", "ポーク", "アンカー"],
+  "data": [
+    {
+      "role": "DPS",
+      "archetype": "スペシャリスト",
+      "rows": [
+        { "row_index": 1, "hero": "バスティオン", "ratings": [0, 2, 2, 2] },
+        { "row_index": 2, "hero": "エムレ", "ratings": [1, 2, 2, 2] },
+        { "row_index": 3, "hero": "ジャンクラット", "ratings": [1, 0, 2, 3] },
+        { "row_index": 4, "hero": "メイ", "ratings": [0, 3, 2, 3] },
+        { "row_index": 5, "hero": "ソルジャー76", "ratings": [1, 1, 2, 2] },
+        { "row_index": 6, "hero": "シンメトラ", "ratings": [2, 3, 2, 3] },
+        { "row_index": 7, "hero": "トールビョーン", "ratings": [0, 1, 2, 3] }
+      ]
+    },
+    {
+      "role": "DPS",
+      "archetype": "フランカー",
+      "rows": [
+        { "row_index": 1, "hero": "アンラン", "ratings": [2, 1, 0, 1] },
+        { "row_index": 2, "hero": "ゲンジ", "ratings": [3, 2, 1, 1] },
+        { "row_index": 3, "hero": "リーパー", "ratings": [2, 3, 0, 1] },
+        { "row_index": 4, "hero": "トレーサー", "ratings": [3, 1, 1, 1] },
+        { "row_index": 5, "hero": "ヴェンデッタ", "ratings": [3, 3, 0, 2] },
+        { "row_index": 6, "hero": "ベンチャー", "ratings": [2, 2, 0, 2] }
+      ]
+    },
+    {
+      "role": "DPS",
+      "archetype": "リコン",
+      "rows": [
+        { "row_index": 1, "hero": "エコー", "ratings": [2, 0, 2, 1] },
+        { "row_index": 2, "hero": "フレイヤ", "ratings": [1, 0, 3, 2] },
+        { "row_index": 3, "hero": "ファラ", "ratings": [1, 0, 3, 1] },
+        { "row_index": 4, "hero": "ソンブラ", "ratings": [2, 2, 0, 1] }
+      ]
+    },
+    {
+      "role": "DPS",
+      "archetype": "シャープシューター",
+      "rows": [
+        { "row_index": 1, "hero": "アッシュ", "ratings": [0, 0, 3, 2] },
+        { "row_index": 2, "hero": "キャスディ", "ratings": [0, 2, 2, 1] },
+        { "row_index": 3, "hero": "ハンゾー", "ratings": [0, 1, 3, 1] },
+        { "row_index": 4, "hero": "ソジョーン", "ratings": [3, 2, 2, 1] },
+        { "row_index": 5, "hero": "ウィドウ", "ratings": [0, 0, 3, 0] }
+      ]
+    },
+    {
+      "role": "TANK",
+      "archetype": "イニシエーター",
+      "rows": [
+        { "row_index": 1, "hero": "D.Va", "ratings": [2, 2, 1, 2] },
+        { "row_index": 2, "hero": "ドゥームフィスト", "ratings": [3, 0, 0, 1] },
+        { "row_index": 3, "hero": "ウィンストン", "ratings": [3, 0, 1, 0] },
+        {
+          "row_index": 4,
+          "hero": "レッキング・ボール",
+          "ratings": [3, 0, 1, 1]
+        }
+      ]
+    },
+    {
+      "role": "TANK",
+      "archetype": "ブルーザー",
+      "rows": [
+        { "row_index": 1, "hero": "マウガ", "ratings": [1, 3, 1, 2] },
+        { "row_index": 2, "hero": "オリーサ", "ratings": [0, 2, 2, 3] },
+        { "row_index": 3, "hero": "ロードホッグ", "ratings": [0, 0, 1, 2] },
+        { "row_index": 4, "hero": "ザリア", "ratings": [1, 3, 1, 2] }
+      ]
+    },
+    {
+      "role": "TANK",
+      "archetype": "ストールワート",
+      "rows": [
+        { "row_index": 1, "hero": "ドミナ", "ratings": [0, 2, 2, 2] },
+        { "row_index": 2, "hero": "ハザード", "ratings": [2, 2, 0, 1] },
+        {
+          "row_index": 3,
+          "hero": "ジャンカークイーン",
+          "ratings": [1, 3, 0, 2]
+        },
+        { "row_index": 4, "hero": "ラマットラ", "ratings": [0, 3, 1, 2] },
+        { "row_index": 5, "hero": "ラインハルト", "ratings": [1, 2, 0, 1] },
+        { "row_index": 6, "hero": "シグマ", "ratings": [0, 2, 3, 2] }
+      ]
+    },
+    {
+      "role": "SUPPORT",
+      "archetype": "タクティシャン",
+      "rows": [
+        { "row_index": 1, "hero": "アナ", "ratings": [2, 1, 2, 2] },
+        {
+          "row_index": 2,
+          "hero": "ジェットパック・キャット",
+          "ratings": [2, 2, 1, 2]
+        },
+        { "row_index": 3, "hero": "ゼニヤッタ", "ratings": [0, 0, 3, 1] },
+        { "row_index": 4, "hero": "バティスト", "ratings": [0, 3, 3, 3] },
+        { "row_index": 5, "hero": "ルシオ", "ratings": [3, 3, 1, 2] }
+      ]
+    },
+    {
+      "role": "SUPPORT",
+      "archetype": "サバイバー",
+      "rows": [
+        { "row_index": 1, "hero": "イラリー", "ratings": [0, 0, 3, 3] },
+        { "row_index": 2, "hero": "ウーヤン", "ratings": [0, 0, 3, 3] },
+        { "row_index": 3, "hero": "ジュノ", "ratings": [2, 3, 1, 0] },
+        { "row_index": 4, "hero": "ブリキッテ", "ratings": [2, 1, 0, 0] },
+        { "row_index": 5, "hero": "ミズキ", "ratings": [2, 1, 1, 1] }
+      ]
+    },
+    {
+      "role": "SUPPORT",
+      "archetype": "メディック",
+      "rows": [
+        { "row_index": 1, "hero": "キリコ", "ratings": [3, 3, 2, 2] },
+        { "row_index": 2, "hero": "マーシー", "ratings": [0, 0, 2, 0] },
+        { "row_index": 3, "hero": "モイラ", "ratings": [2, 3, 0, 0] },
+        { "row_index": 4, "hero": "ライフウィーバー", "ratings": [0, 0, 1, 2] }
+      ]
+    }
+  ]
+}
