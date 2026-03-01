@@ -1,0 +1,31 @@
+---
+description: ow-pick-recommend（Fifth）の技術スタック・構成・規約。AI がコードを触るときの前提。
+globs: 
+alwaysApply: true
+---
+
+# プロジェクト概要
+
+- **アプリ名**: Fifth（5人目ピック）
+- **用途**: Overwatch 5v5 で味方4人を選ぶと、5人目のおすすめヒーローを表示する Web アプリ
+- **スタック**: Vite 7 + React 19 + TypeScript + Tailwind CSS v4（@tailwindcss/vite）
+- **ホスティング**: GitHub Pages（`base: '/ow-pick-recommend/'`）。リポジトリ名変更時は `vite.config.ts` の `base` を合わせる
+
+# ディレクトリと責務
+
+- **`src/App.tsx`**: メイン画面。ロール選択・味方4人（HeroSelect）・設定（戦略・表示数）・おすすめ一覧
+- **`src/types.ts`**: `Role`, `HeroEntry`, `CompIndex`, `HeroDataRaw` など
+- **`src/lib/hero.ts`**: 編成ロジック。`flattenHeroes`, `getTeamCompositionIndex`, `getMissingRole`, `getRecommendations`。戦略は `strength` / `weakness` / `balance`
+- **`src/lib/hero-icons.ts`**: ヒーロー名（日本語）→ アイコン画像。`HERO_ICON_SLUG`, `getHeroIconUrl`。画像は `src/assets/heroes/<slug>.png`
+- **`src/lib/hero-names.ts`**: 表示名。`getHeroDisplayName(jaName, locale)`。日本語名↔英語名は `HERO_JA_TO_EN`
+- **`src/data/hero.json`**: 唯一のデータソース。`columns`（ダイブ/ラッシュ/ポーク/アンカー）、`data`（役割別ヒーローと `ratings` の4要素）
+- **`src/i18n/`**: 多言語。`context.tsx` の `useI18n()` で `t`, `compLabel`, `roleLabel`, `locale`, `setLocale`。文言は `locales/ja.ts`, `en.ts`
+- **`src/components/hero-select.tsx`**: 味方選択用。アイコン＋名前のドロップダウン。`getHeroIconUrl`, `getHeroDisplayName` を使用
+- **`src/components/ui/`**: 汎用 UI（card, label, select, badge）。Badge の variant は `tank` / `dps` / `support`
+
+# 規約
+
+- ヒーロー名は **hero.json の表記（日本語）** をキーに統一。英語表示は `hero-names.ts` と i18n に任せる
+- 新ヒーロー追加時: `src/data/hero.json` に行を追加し、必要なら `hero-icons.ts` の `HERO_ICON_SLUG` と `hero-names.ts` の `HERO_JA_TO_EN` に追加
+- パスエイリアス: `@/` → `src/`（`vite.config.ts` と `tsconfig.app.json` で設定）
+- GitHub Pages 用に `base` を変更したら、`npm run build` とデプロイで確認すること
